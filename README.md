@@ -49,3 +49,6 @@ $scope.data = [{
 - Fix Facebook routing issues
 - Redesign (angular-material maybe ?)
 
+You can help by contributing to this project !
+
+2016 - Made by Imad Archid.
