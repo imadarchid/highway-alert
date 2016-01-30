@@ -1,0 +1,125 @@
+<ol class="breadcrumb">
+  <li><a href="#/main">Acceuil</a></li>
+  <li class="active">Signaler un incident</li>
+</ol>
+
+<div ng-hide="connected" class="alert alert-danger" role="alert">
+  Vous devez vous connecter pour voir cette page ! 
+</div> 
+
+<div ng-show="connected" class="container">
+
+
+
+	<div id="reportform">
+
+
+
+		<form class="form-horizontal" ng-submit="add()">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Signaler un incident à ADM</legend>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Description courte (Titre)</label>  
+  <div class="col-md-5">
+  <input id="textinput" name="textinput" ng-model="description" type="text" placeholder="Titre" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Date et Heure</label>  
+  <div class="col-md-5">
+  <input id="textinput" name="textinput" ng-model="time" type="text" placeholder="DD/MM/YY HH:MM" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="description">Description longue</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="description" ng-model="details" name="description">Décrivez un peu l'incident</textarea>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="category">Catégorie</label>
+  <div class="col-md-4">
+    <select id="category" name="category" class="form-control" ng-model="category">
+      <option value="1">Accident routier</option>
+      <option value="2">Embouteillage/Bouchons</option>
+      <option value="3">Route déviée</option>
+      <option value="4">Route bloquée</option>
+      <option value="5">Gare de péages pleines</option>
+      <option value="6">Travaux</option>
+      <option value="7">Mauvaise météo</option>
+    </select>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="grav">Gravité</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="grav-0">
+      <input type="radio" name="grav" id="grav-0" value="1" checked="checked">
+      Normal
+    </label>
+	</div>
+  <div class="radio">
+    <label for="grav-1">
+      <input type="radio" name="grav" id="grav-1" value="2">
+      Moyen
+    </label>
+	</div>
+  <div class="radio">
+    <label for="grav-2">
+      <input type="radio" name="grav" id="grav-2" value="3">
+      Dangeureux
+    </label>
+	</div>
+  <div class="radio">
+    <label for="grav-3">
+      <input type="radio" name="grav" id="grav-3" value="4">
+      A éviter
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="fileupload">Photo</label>
+  <div class="col-md-4">
+    <input id="fileupload" name="fileupload" ng-model="image" class="input-file" type="file">
+  </div>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" value="save" name="submit" class="btn btn-success">Envoyer</button>
+  </div>
+</div>
+
+
+
+
+
+</fieldset>
+</form>
+
+
+
+	</div>
+
+</div>

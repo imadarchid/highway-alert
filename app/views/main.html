@@ -1,0 +1,49 @@
+<div class="jumbotron">
+  <div class="container">
+  <h1>Alertes Autoroutes!</h1>
+  <p>Sur cette application, vous pouvez consulter l'état de circulation sur les autoroutes marocaines, vous pouvez aussi contribuer en créant une alerte. Ces données sont gérés par ADM (Hopefully :p)</p>
+  
+</div>
+</div>   
+
+
+
+<div id="current-title" class="col-md-8">
+
+  <h3>Alertes pour aujourd'hui :</h3>
+
+ <div class="alert alert-warning" role="alert">
+  3 alertes ont été signalés pour aujoud'hui :
+</div> 
+
+
+
+<div id="alert" >
+<div class="panel panel-default" ng-repeat="d in data">
+  <div class="panel-heading">
+    <h3 class="panel-title"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> {{d.date}} | {{d.title}}</h3>
+  </div>
+  <div class="panel-body">
+  <h4>Description de l'incident</h4><br>  
+  <p>{{d.desc}}</p></br>  
+    <ul>
+      <li><b>Degré :</b> {{d.degree}}</li>
+      <li><b>Catégorie :</b> {{d.category}}</li>
+      <li><b>Traffic actuel :</b> {{d.traffic}}</li>
+    </ul>
+
+  </div>
+</div>
+</div>
+
+<!-- This test banner is used for promoting purposes, for example, new discount on subscription cards made by the highway company -->
+
+</div>    
+<div id="sidebar-title" class="col-md-4">
+  <h3>Sidebar</h3>
+  <h6>Test banner (see comment)</h6> 
+  <img src="https://lh3.ggpht.com/GogRul8PGmFB3UJhpg5Nag1Psk5VD4UO_y-7MQaABybqoE5T6_8xJdCakV4jnicxlpLGwLAX=w336">
+
+</div>
+
+    

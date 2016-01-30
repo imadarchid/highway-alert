@@ -1,0 +1,48 @@
+<div ng-hide="connected" class="alert alert-danger" role="alert">
+  Vous devez vous connecter pour voir cette page ! 
+</div> 
+
+<div class="col-md-4" ng-show="connected">
+
+
+
+	<div id="acc-details">
+
+		<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+
+            <div class="card hovercard">
+            <button type="button" class="btn btn-primary btn-xs pull-left" >{{user.id}}</button><button class="btn btn-primary btn-xs pull-right"></button>
+                <div class="cardheader" style="background: url('http://www.h24info.ma/sites/default/files/articles/principales/morrocan-highway_0_0.jpg');background-size: cover;height: 135px;">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" ng-src="{{link}}" >
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="#">{{user.name}}</a>
+                    </div>
+                    <div class="desc">{( description )}</div>
+                    <div>Joined <b>{(date)}</b></div>
+                </div>
+            </div>
+
+        </div>
+
+	</div>
+
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="col-md-8">
+<div id="profilepic">	
+	</div>
+	</div>
