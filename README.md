@@ -4,6 +4,11 @@ An AngularJS app that offers to authorities, and highway companies (In this proj
 
 I've made this for learning purposes, so the code may be really REALLY shitty, seriously, it might hurt your eyes.
 
+## Requirements :
+
+- Facebook API key (app.js)
+- Firebase Account (DB Url)
+
 
 ## What's working ?
 - Submitting a report to Firebase DB.
